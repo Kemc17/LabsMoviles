@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab02</string>
+    <string name="Title_name">BMI</string>
+    <string name="weight">Weight</string>
+    <string name="hint_60">60</string>
+    <string name="kg">Kg</string>
+    <string name="height">Height</string>
+    <string name="hint_180">180</string>
+</resources>

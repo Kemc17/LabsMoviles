@@ -4,4 +4,8 @@
     <dimen name="ImageView_layout_height">127dp</dimen>
     <dimen name="max_text_size">40dp</dimen>
     <dimen name="min_text_size">20dp</dimen>
+    <dimen name="mt">32dp</dimen>
+    <dimen name="ME">24dp</dimen>
+    <dimen name="me">24dp</dimen>
+    <dimen name="mt_64">64dp</dimen>
 </resources>

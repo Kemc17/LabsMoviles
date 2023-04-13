@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab04</string>
+    <string name="Title">Rellena la siguiente información</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="Telefono">Teléfono</string>
+    <string name="guardar">Guardar</string>
+    <string name="Title_second">Confirma tu información</string>
+    <string name="Name_result">Name</string>
+    <string name="Result_email">Correo electrónico</string>
+    <string name="Result_telefono">Número de teléfono</string>
+    <string name="Name_second">Nombre</string>
+    <string name="share_buttom">Compartir</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <dimen name="absolute_X">0dp</dimen>
+    <dimen name="absolute_Y">79dp</dimen>
+    <dimen name="marginStart">20dp</dimen>
+    <dimen name="marginEnd">20dp</dimen>
+    <dimen name="constraintGuide_begin">162dp</dimen>
+    <dimen name="ConstraintGuide_begin2">575dp</dimen>
+    <dimen name="marginStart2">150dp</dimen>
+    <dimen name="marginEnd2">171dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_size2">20sp</dimen>
+    <dimen name="marginEnd3">100dp</dimen>
+    <dimen name="marginEnd4">100dp</dimen>
+</resources>

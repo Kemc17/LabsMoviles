@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/backgroundLayout"
+    tools:context=".NewMovieFragment">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/create_movie"
+        android:textColor="@color/white"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/pdtop"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_name"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:paddingTop="@dimen/pdtopnew"
+        android:paddingBottom="@dimen/pdbottom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_category"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/pdt"
+        android:paddingBottom="@dimen/pdb"
+        android:hint="@string/hint_cat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_description"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/pdt"
+        android:paddingBottom="@dimen/pdb"
+        android:hint="@string/hint_description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField_calification"
+        android:layout_width="@dimen/ly_calification"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/pdt"
+        android:hint="@string/hint_calification"
+        android:paddingBottom="@dimen/pdb">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/buttonColor"/>
+
+
+
+
+</LinearLayout>

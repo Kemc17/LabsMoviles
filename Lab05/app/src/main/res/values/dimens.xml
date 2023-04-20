@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_width">350dp</dimen>
+    <dimen name="card_heigth">125dp</dimen>
+    <dimen name="card_elevation">15dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="layout_img">127dp</dimen>
+    <dimen name="img_width">250dp</dimen>
+    <dimen name="img_height">197dp</dimen>
+    <dimen name="guide_dimens">440dp</dimen>
+    <dimen name="pdtop">50dp</dimen>
+    <dimen name="pdtopnew">15dp</dimen>
+    <dimen name="pdbottom">15dp</dimen>
+    <dimen name="pdt">15dp</dimen>
+    <dimen name="pdb">15dp</dimen>
+    <dimen name="ly_calification">392dp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab05</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Title">Billboard</string>
+    <string name="movie_title">Star Wars episodio 3: La venganza de los Sith</string>
+    <string name="score_movie">9.8</string>
+    <string name="add_new_movie">Add new movie</string>
+    <string name="movie_name">Movie</string>
+    <string name="title_movie_final">Star Wars episodio 3: La venganza de los Sith</string>
+    <string name="genred">Ciencia ficción</string>
+    <string name="Critici_value">9.8</string>
+    <string name="Loremp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</string>
+    <string name="create_movie">Create Movie</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_cat">Category</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_calification">Calification</string>
+    <string name="submit">Submit</string>
+</resources>

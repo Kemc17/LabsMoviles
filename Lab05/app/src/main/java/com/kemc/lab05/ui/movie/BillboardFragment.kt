@@ -1,4 +1,4 @@
-package com.kemc.lab05
+package com.kemc.lab05.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.kemc.lab05.R
 
-class billboardFragment : Fragment() {
+class BillboardFragment : Fragment() {
     private lateinit var actionToMovie: CardView
     private lateinit var actionToNewMovie: FloatingActionButton
 

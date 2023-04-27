@@ -1,7 +1,8 @@
-package com.kemc.lab05
+package com.kemc.lab05.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kemc.lab05.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

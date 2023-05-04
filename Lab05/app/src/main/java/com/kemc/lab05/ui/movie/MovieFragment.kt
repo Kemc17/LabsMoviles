@@ -1,53 +1,70 @@
 package com.kemc.lab05.ui.movie
 
 import android.os.Bundle
+import android.util.Log
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.cardview.widget.CardView
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kemc.lab05.R
+import com.kemc.lab05.databinding.FragmentMovieBinding
+import com.kemc.lab05.databinding.FragmentNewMovieBinding
+import com.kemc.lab05.ui.movie.MovieViewModel
 
-/**
- * A simple [Fragment] subclass.
- * Use the [MovieFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class MovieFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-
-        }
+    private val viewModel: MovieViewModel by activityViewModels{
+        MovieViewModel.Factory
     }
+
+    private lateinit var binding: FragmentMovieBinding
+
+//    private lateinit var name: TextInputEditText
+//    private lateinit var category: TextInputEditText
+//    private lateinit var description: TextInputEditText
+//    private lateinit var calification: TextInputEditText
+//    private lateinit var action: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movie, container, false)
+    ): View {
+        binding = FragmentMovieBinding.inflate(inflater, container, false)
+        return binding.root
+
+//        // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_new_movie, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment MovieFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            MovieFragment().apply {
-                arguments = Bundle().apply {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-                }
-            }
     }
+
+
+//    private fun bind(view: View){
+//        name = view.findViewById(R.id.text_inputName)
+//        category = view.findViewById(R.id.text_inputCategory)
+//        description = view.findViewById(R.id.text_inputDescription)
+//        calification = view.findViewById(R.id.text_inputCalification)
+//        action = view.findViewById(R.id.button)
+//    }
+//
+//    private fun createMovie(){
+//        val newMoview = MovieModel(
+//            name.text.toString(),
+//            category.text.toString(),
+//            description.text.toString(),
+//            calification.text.toString()
+//        )
+//        viewModel.addMovies(newMoview)
+//
+//        Log.d("APP TAG", viewModel.getMovies().toString())
+//
+//        findNavController().popBackStack()
+//    }
 }

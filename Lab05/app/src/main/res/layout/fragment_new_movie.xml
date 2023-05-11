@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.movie.newmovie.NewMovieFragment">
 
     <data>
         <variable
             name="viewmodel"
-            type="com.kemc.lab05.ui.movie.MovieViewModel" />
+            type="com.kemc.lab05.ui.movie.viewmodel.MovieViewModel" />
     </data>
 
     <LinearLayout
@@ -14,19 +16,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:background="@color/backgroundLayout"
-        tools:context=".ui.movie.NewMovieFragment">
+        android:background="@color/backgroundLayout">
+
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/create_movie"
+            android:text="New Movie"
             android:textColor="@color/white"
             android:textSize="54sp"
             android:textStyle="bold"
-            android:paddingTop="@dimen/pdtop"/>
+            android:paddingTop="50dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField_name"
@@ -34,17 +36,18 @@
             android:layout_height="wrap_content"
             app:boxStrokeColor="@color/white"
             android:textColorHint="@color/white"
-            android:hint="@string/hint_name"
-            android:paddingTop="@dimen/pdtopnew"
-            android:paddingBottom="@dimen/pdbottom">
+            android:hint="Name"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_inputName"
                 android:layout_width="match_parent"
                 android:text="@={viewmodel.name}"
                 android:textColor="@color/white"
                 android:background="@color/cardLayout"
                 android:layout_height="wrap_content"
-                android:id="@+id/text_inputName"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,11 +55,11 @@
             android:id="@+id/textField_category"
             android:layout_width="392dp"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/pdt"
-            android:paddingBottom="@dimen/pdb"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
             app:boxStrokeColor="@color/white"
             android:textColorHint="@color/white"
-            android:hint="@string/hint_cat">
+            android:hint="Category">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -74,9 +77,9 @@
             android:textColorHint="@color/white"
             android:layout_height="wrap_content"
             app:boxStrokeColor="@color/white"
-            android:paddingTop="@dimen/pdt"
-            android:paddingBottom="@dimen/pdb"
-            android:hint="@string/hint_description">
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:hint="Description">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -90,13 +93,13 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textField_calification"
-            android:layout_width="@dimen/ly_calification"
+            android:layout_width="392dp"
             android:textColorHint="@color/white"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/pdt"
+            android:paddingTop="15dp"
             app:boxStrokeColor="@color/white"
-            android:hint="@string/hint_calification"
-            android:paddingBottom="@dimen/pdb">
+            android:hint="Calification"
+            android:paddingBottom="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -113,7 +116,7 @@
             android:onClick="@{() -> viewmodel.createMovie()}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/submit"
+            android:text="Submit"
             android:textColor="@color/black"
             android:backgroundTint="@color/buttonColor"/>
 

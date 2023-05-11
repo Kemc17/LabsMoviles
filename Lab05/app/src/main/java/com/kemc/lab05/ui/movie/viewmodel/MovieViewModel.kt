@@ -1,4 +1,4 @@
-package com.kemc.lab05.ui.movie
+package com.kemc.lab05.ui.movie.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -17,7 +17,6 @@ class MovieViewModel(private val repository: MovieRepository):ViewModel() {
     var status = MutableLiveData("")
 
     fun getMovies() = repository.getMovies()
-
     fun addMovies(movie: MovieModel) = repository.addMovies(movie)
 
     private fun validateData(): Boolean{
@@ -44,7 +43,6 @@ class MovieViewModel(private val repository: MovieRepository):ViewModel() {
         )
 
         addMovies(newMoview)
-        clearData()
         status.value = MOVIE_CREATED
     }
 
@@ -57,6 +55,13 @@ class MovieViewModel(private val repository: MovieRepository):ViewModel() {
         category.value = ""
         description.value = ""
         qualification.value = ""
+    }
+
+    fun setSelectedMovie(movie: MovieModel){
+        name.value = movie.name
+        category.value = movie.category
+        description.value = movie.description
+        qualification.value = movie.qualification
     }
 
     companion object{

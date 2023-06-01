@@ -136,4 +136,8 @@ val book6 = Book(
     "978-0446603657"
 )
 
+public val books = listOf(book1, book2, book3, book4, book5, book6)
+public val publishers = listOf(publisher1, publisher2, publisher3, publisher4, publisher5, publisher6)
+public val authors = listOf(author1, author2, author3, author4, author5, author6)
+
 
